@@ -80,7 +80,10 @@ document.addEventListener("DOMContentLoaded", function () {
         ["../Cars/Dodge/Charger/pexels-kelcey-shotit-696990889-19244520.jpg","../Cars/Dodge/Charger/pexels-04iraq-1272398525-23952894.jpg"],
         ["../Cars/Dodge/Durango/pexels-alba-cars-139933177-11592843.jpg","../Cars/Dodge/Durango/pexels-messina-photo-61078602-8042432.jpg"],
         ["../Cars/Dodge/Challenger/pexels-jakewymoore-12330341.jpg","../Cars/Dodge/Challenger/pexels-mike-noga-1916934-3608542.jpg"],
-
+        ["../Cars/Chevy/Camaro/chevycamaro.jpg","../Cars/Chevy/Camaro/pexels-04iraq-1272398525-29098284.jpg"],
+        ["../Cars/Chevy/Cativa/Chevycapvita.jpg","../Cars/Chevy/Cativa/images.jpeg"],
+        ["../Cars/Chevy/Cruze/Chevycruze.jpg","../Cars/Chevy/Cruze/download.jpeg"],
+        
     ];
 
     if (document.getElementById("BMW")) {
