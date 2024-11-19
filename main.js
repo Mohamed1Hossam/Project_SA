@@ -1,4 +1,5 @@
 function searchBrand() {
+//-------------------------------------------------------Mohamed hossam part start here-----------------------------------------------------------------------------------------//
     var keyword = document.getElementById("searchInput").value.toLowerCase();
 
     var Brands = {
@@ -35,7 +36,6 @@ function searchBrand() {
 
 }
 
-//-------------------------------------------------------Mohamed hossam part start here-----------------------------------------------------------------------------------------//
 let addToCartButtons = document.querySelectorAll(".add-to-cart");
 
 addToCartButtons.forEach(function (button) {
@@ -64,7 +64,11 @@ document.addEventListener("DOMContentLoaded", function () {
         ["../Cars/Mercedes/S_Class/2022-mercedes-benz-s500-4matic-101-1642184014.jpg", "../Cars/Mercedes/S_Class/2022-mercedes-benz-s500-4matic-102-1642184016.jpg", "../Cars/Mercedes/S_Class/2022-mercedes-benz-s500-4matic-103-1642184013.jpg", "../Cars/Mercedes/S_Class/2022-mercedes-benz-s500-4matic-114-1642184019.jpg", "../Cars/Mercedes/S_Class/2022-mercedes-benz-s500-4matic-124-1642184029.jpg"],
         ["../Cars/Alfa/Tonale/2024-alfa-romeo-tonale-eawd-103-6525bc16c793d.jpg", "../Cars/Alfa/Tonale/2024-alfa-romeo-tonale-eawd-237-6525bc17be9bb.jpg","../Cars/Alfa/Tonale/2024-alfa-romeo-tonale-eawd-316-6525bd7902872.jpg","../Cars/Alfa/Tonale/2024-alfa-romeo-tonale-eawd-496-6525bc1f91c71.jpg","../Cars/Alfa/Tonale/2024-alfa-romeo-tonale-eawd-511-6525bc219f129.jpg","../Cars/Alfa/Tonale/2024-alfa-romeo-tonale-eawd-569-6525bc29c2a98.jpg"],
         ["../Cars/Alfa/Giulia/2023-alfa-romeo-giulia-101-6400fe6ad4891.jpeg","../Cars/Alfa/Giulia/2023-alfa-romeo-giulia-102-6400fe6b0bb68.jpeg","../Cars/Alfa/Giulia/2023-alfa-romeo-giulia-103-6400fe6b10c39.jpeg","../Cars/Alfa/Giulia/2023-alfa-romeo-giulia-107-6400fe6bccb6a.jpeg","../Cars/Alfa/Giulia/2023-alfa-romeo-giulia-110-6400fe6ae4216.jpeg"],
-        ["../Cars/Alfa/Stelvio/2024-alfa-romeo-stelvio-105-640215298fa2f.jpeg","../Cars/Alfa/Stelvio/2024-alfa-romeo-stelvio-106-640215298b274.jpeg","../Cars/Alfa/Stelvio/2024-alfa-romeo-stelvio-107-64021529f3b4c.jpeg","../Cars/Alfa/Stelvio/2024-alfa-romeo-stelvio-114-6402152ad8885.jpeg","../Cars/Alfa/Stelvio/2024-alfa-romeo-stelvio-115-6402152ada34e.jpeg"]
+        ["../Cars/Alfa/Stelvio/2024-alfa-romeo-stelvio-105-640215298fa2f.jpeg","../Cars/Alfa/Stelvio/2024-alfa-romeo-stelvio-106-640215298b274.jpeg","../Cars/Alfa/Stelvio/2024-alfa-romeo-stelvio-107-64021529f3b4c.jpeg","../Cars/Alfa/Stelvio/2024-alfa-romeo-stelvio-114-6402152ad8885.jpeg","../Cars/Alfa/Stelvio/2024-alfa-romeo-stelvio-115-6402152ada34e.jpeg"],
+        ["../Cars/Audi/A6/2024-audi-a6-101-64761a190970d.jpg","../Cars/Audi/A6/2024-audi-a6-102-64761a1910bef.jpg","../Cars/Audi/A6/2024-audi-a6-105-64761a1ab6eb4.jpg","/Cars/Audi/A6/2024-audi-s6-102-64761a1bb689c.jpg"],
+        ["../Cars/Audi/Q3/2022-audi-q3-premium-45-119-64b19da0646ad.jpg","../Cars/Audi/Q3/2022-audi-q3-premium-45-118-64b19da02e90e.jpg","../Cars/Audi/Q3/2022-audi-q3-premium-45-116-64b19da017a6a.jpg","../Cars/Audi/Q3/2022-audi-q3-premium-45-101-64b19d9d9cfbd.jpg","../Cars/Audi/Q3/2022-audi-q3-premium-45-105-64b19d9dec649.jpg"],
+        ["../Cars/Audi/Q8/2024-audi-q8-exterior-static-107-64f0ba5434e59.jpg","../Cars/Audi/Q8/2024-audi-q8-exterior-static-106-64f0ba52ee821.jpg","../Cars/Audi/Q8/2024-audi-q8-exterior-static-101-64f0ba536838c.jpg","../Cars/Audi/Q8/2024-audi-q8-interior-101-64f0b9ce6969a.jpg","../Cars/Audi/Q8/2024-audi-q8-interior-102-64f0b9cd53b02.jpg","../Cars/Audi/Q8/2024-audi-q8-interior-103-64f0b9cd749a7.jpg"],
+
     ];
 
     if (document.getElementById("BMW")) {
@@ -168,55 +172,4 @@ function f() {
     alert("Submitted successfully!");
 }
 
-//-------------------------------------------------------Mohamed Harby part start here-----------------------------------------------------------------------------------------//
-function Buy_Alert() {
-    var Buy_confirm;
-    if (confirm("are you sure you want to buy this car ?")) {
-        Buy_confirm = "You have bought this car !";
-    }
-    else {
-        Buy_confirm = "Keep looking and you may find a car that suits you better"
-    }
-    document.getElementById("buy_confirm").innerHTML = Buy_confirm;
-}
-
-function Comment_alert() {
-    alert("Thank you for your Comment, have a nice day!")
-}
-
-//-------------------------------------------------------Mohamed Desoky part start here-----------------------------------------------------------------------------------------//
-
-
-function toggleCarsSection() {
-    var carsSections = document.getElementsByClassName("cars-container");
-    for (var i = 0; i < carsSections.length; i++) {
-        var carsSection = carsSections[i];
-        if (carsSection.style.display === "none" || carsSection.style.display === "") {
-            carsSection.style.display = "flex";
-        } else {
-            carsSection.style.display = "none";
-        }
-    }
-}
-
-//-------------------------------------------------------Mohamed Samy part start here-----------------------------------------------------------------------------------------//
-function buy() {
-    alert("Audi A3 is added to cart")
-}
-
-//-------------------------------------------------------Mohamed Hussein part start here-----------------------------------------------------------------------------------------//
-
-
-function scrollToDiv(className) {
-    var targetDiv = document.querySelector('.' + className);
-    if (targetDiv) {
-        targetDiv.scrollIntoView({ behavior: 'smooth' });
-    }
-}
-let addButton = document.querySelectorAll(".my-button");
-addButton.forEach(function (button) {
-    button.addEventListener("click", function () {
-        var carName = this.getAttribute("data-car-name");
-        addToCart(carName);
-    });
-});
+//------------------------------------------------------------------------------------------------------------------------------------------------//
