@@ -71,6 +71,15 @@ document.addEventListener("DOMContentLoaded", function () {
         ["../Cars/Ford/2020 Ford Fusion/2020-ford-fusion-mmp-1-1568742907.jpeg","../Cars/Ford/2020 Ford Fusion/2020-ford-fusion-mmp-2-1568743032.jpeg","../Cars/Ford/2020 Ford Fusion/2020-ford-fusion-mmp-3-1568743081.jpeg"],
         ["../Cars/Ford/2022 Ford EcoSport/2018-ford-ecosport-2-0l-102-1527708025.jpg","../Cars/Ford/2022 Ford EcoSport/2018-ford-ecosport-2-0l-103-1527708026.jpg","../Cars/Ford/2022 Ford EcoSport/2018-ford-ecosport-2-0l-109-1527708027.jpg","../Cars/Ford/2022 Ford EcoSport/2018-ford-ecosport-2-0l-115-1527708033.jpg","../Cars/Ford/2022 Ford EcoSport/2018-ford-ecosport-2-0l-122-1527708031.jpg","../Cars/Ford/2022 Ford EcoSport/2018-ford-ecosport-2-0l-125-1527708032.jpg","../Cars/Ford/2022 Ford EcoSport/2018-ford-ecosport-2-0l-141-1527708038.jpg"],
         ["../Cars/Ford/Mustang/ford-mustang-shelby-gt500-2022-651234.jpg","../Cars/Ford/Mustang/ford-mustang-shelby-gt500-2022-651226.jpg","../Cars/Ford/Mustang/gettyimages-475728306-612x612.jpg"],
+        ["../Cars/Nissan/Pathfinder/01-2024-nissan-pathfinder-angular-front-jms.jpeg","../Cars/Nissan/Pathfinder/2022-nissan-pathfinder-platinum-awd-270-1637092224.jpg"],
+        ["../Cars/Nissan/Titan/wp2393298-nissan-titan-wallpapers.jpg","../Cars/Nissan/Titan/wp2393332-nissan-titan-wallpapers.jpg"],
+        ["../Cars/Nissan/GT-R/jacob-s-3VVp9aOUJEY-unsplash.jpg","../Cars/Nissan/GT-R/martin-katler-4A0Z_FxXpVk-unsplash.jpg"],
+        ["../Cars/KIA/Cerato/kia_k3_bd_pe_22my_gallery_exterior_01.jpg","../Cars/KIA/Cerato/kia_k3_bd_pe_22my_gallery_exterior_03.jpg","../Cars/KIA/Cerato/kia_k3_bd_pe_22my_gallery_interior_01.jpg"],
+        ["../Cars/KIA/Sportage/kia-nq5-22my-thum-exterior-01.jpg","../Cars/KIA/Sportage/kia-nq5-22my-thum-exterior-02.jpg"],
+        ["../Cars/KIA/Picanto/picanto-24my-thum-exterior-05.jpg","../Cars/KIA/Picanto/picanto-24my-thum-exterior-06.jpg","../Cars/KIA/Picanto/picanto-24my-thum-interior-11.jpg"],
+        ["../Cars/Dodge/Charger/pexels-kelcey-shotit-696990889-19244520.jpg","../Cars/Dodge/Charger/pexels-04iraq-1272398525-23952894.jpg"],
+        ["../Cars/Dodge/Durango/pexels-alba-cars-139933177-11592843.jpg","../Cars/Dodge/Durango/pexels-messina-photo-61078602-8042432.jpg"],
+        ["../Cars/Dodge/Challenger/pexels-jakewymoore-12330341.jpg","../Cars/Dodge/Challenger/pexels-mike-noga-1916934-3608542.jpg"],
 
     ];
 
