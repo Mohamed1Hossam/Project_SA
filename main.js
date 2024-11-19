@@ -48,85 +48,63 @@ addToCartButtons.forEach(function (button) {
 function addToCart(carName) {
     alert("You Bought " + carName);
 }
-
 document.addEventListener("DOMContentLoaded", function () {
     const imageSets = [
-        ["/Cars/BMW/3/1.png", "/Cars/BMW/3/2.png", "/Cars/BMW/3/3.png", "/Cars/BMW/3/4.jpg"],
-        ["/Cars/BMW/5/1.jpg", "/Cars/BMW/5/2.jpg", "/Cars/BMW/5/3.jpg", "/Cars/BMW/5/4.jpg", "/Cars/BMW/5/5.jpg", "/Cars/BMW/5/6.jpg", "/Cars/BMW/5/7.jpg", "/Cars/BMW/5/8.jpg"],
-        ["/Cars/BMW/7/1.jpg", "/Cars/BMW/7/2.jpg", "/Cars/BMW/7/3.jpg", "/Cars/BMW/7/4.jpg", "/Cars/BMW/7/5.jpg", "/Cars/BMW/7/6.jpg", "/Cars/BMW/7/7.jpg", "/Cars/BMW/7/8.jpg", "/Cars/BMW/7/9.jpg"],
-        ["/Cars/BMW/BMW M8 Gran Coupe/1.jpg", "/Cars/BMW/BMW M8 Gran Coupe/2.jpg", "/Cars/BMW/BMW M8 Gran Coupe/3.jpg", "/Cars/BMW/BMW M8 Gran Coupe/4.jpg", "/Cars/BMW/BMW M8 Gran Coupe/5.jpg", "/Cars/BMW/BMW M8 Gran Coupe/6.jpg", "/Cars/BMW/BMW M8 Gran Coupe/7.jpg", "/Cars/BMW/BMW M8 Gran Coupe/8.jpg", "/Cars/BMW/BMW M8 Gran Coupe/9.jpg", "/Cars/BMW/BMW M8 Gran Coupe/10.jpg"],
-        ["/Cars/BMW/X6/2024-bmw-x6-110-1675791921.jpg", "/Cars/BMW/X6/2024-bmw-x6-113-1675791922.jpg","/Cars/BMW/X6/P90495591_highRes_the-new-bmw-x6-m-com.jpg"],
-        ["/Cars/BMW/X7/2023-bmw-x7-xdrive-40i144-641c5b4169eb2.jpg", "/Cars/BMW/X7/2023-bmw-x7-xdrive-40i147-641c5b438a1cc.jpg", "/Cars/BMW/X7/2023-bmw-x7-xdrive-40i128-641c5b39edaad.jpg", "/Cars/BMW/X7/2023-bmw-x7-xdrive-40i132-641c5b3c33cbc.jpg", "/Cars/BMW/X7/2023-bmw-x7-xdrive-40i101-641c5b2d70bc9.jpg", "/Cars/BMW/X7/2023-bmw-x7-xdrive-40i115-641c5b31db5bb.jpg"],
-        ["/Cars/Mercedes/CLA/1.jpg", "/Cars/Mercedes/CLA/2.webp", "/Cars/Mercedes/CLA/3.jpg", "/Cars/Mercedes/CLA/4.jpg"],
-        ["/Cars/Mercedes/A_Class/3.jpg", "/Cars/Mercedes/A_Class/4.jpg", "/Cars/Mercedes/A_Class/5.jpg", "/Cars/Mercedes/A_Class/6.jpg", "/Cars/Mercedes/A_Class/1.jpg", "/Cars/Mercedes/A_Class/2.jpg", "/Cars/Mercedes/A_Class/7.jpg", "/Cars/Mercedes/A_Class/8.jpg"],
-        ["/Cars/Mercedes/B_Class/640px-Mercedes-Benz_B-Class.jpg", "Cars/Mercedes/B_Class/2.jpg", "Cars/Mercedes/B_Class/Mercedes-Benz_B-Class_at_the_Frankfurt_Motor_Show_IAA_2011_(6147726918).jpg"],
-        ["/Cars/Mercedes/C_Class/1.jpg", "/Cars/Mercedes/C_Class/2.jpg", "/Cars/Mercedes/C_Class/3.jpg", "/Cars/Mercedes/C_Class/4.jpg", "/Cars/Mercedes/C_Class/5.jpg", "/Cars/Mercedes/C_Class/6.jpg", "/Cars/Mercedes/C_Class/7.jpg", "/Cars/Mercedes/C_Class/8.jpg"],
-        ["/Cars/Mercedes/E_Class/4.jpg", "/Cars/Mercedes/E_Class/5.jpg", "/Cars/Mercedes/E_Class/6.jpg", "/Cars/Mercedes/E_Class/7.jpg", "/Cars/Mercedes/E_Class/1.jpg", "/Cars/Mercedes/E_Class/2.jpg", "/Cars/Mercedes/E_Class/3.jpg", "/Cars/Mercedes/E_Class/8.jpg", "/Cars/Mercedes/E_Class/9.jpg"],
-        ["/Cars/Mercedes/S_Class/2022-mercedes-benz-s500-4matic-101-1642184014.jpg", "/Cars/Mercedes/S_Class/2022-mercedes-benz-s500-4matic-102-1642184016.jpg", "/Cars/Mercedes/S_Class/2022-mercedes-benz-s500-4matic-103-1642184013.jpg", "/Cars/Mercedes/S_Class/2022-mercedes-benz-s500-4matic-114-1642184019.jpg", "/Cars/Mercedes/S_Class/2022-mercedes-benz-s500-4matic-124-1642184029.jpg"],
-        // Add more sets of image URLs as needed
+        ["../Cars/BMW/3/1.png", "../Cars/BMW/3/2.png", "../Cars/BMW/3/3.png", "../Cars/BMW/3/4.jpg"],
+        ["../Cars/BMW/5/1.jpg", "../Cars/BMW/5/2.jpg", "../Cars/BMW/5/3.jpg", "../Cars/BMW/5/4.jpg", "../Cars/BMW/5/5.jpg", "../Cars/BMW/5/6.jpg", "../Cars/BMW/5/7.jpg", "../Cars/BMW/5/8.jpg"],
+        ["../Cars/BMW/7/1.jpg", "../Cars/BMW/7/2.jpg", "../Cars/BMW/7/3.jpg", "../Cars/BMW/7/4.jpg", "../Cars/BMW/7/5.jpg", "../Cars/BMW/7/6.jpg", "../Cars/BMW/7/7.jpg", "../Cars/BMW/7/8.jpg", "../Cars/BMW/7/9.jpg"],
+        ["../Cars/BMW/BMW M8 Gran Coupe/1.jpg", "../Cars/BMW/BMW M8 Gran Coupe/2.jpg", "../Cars/BMW/BMW M8 Gran Coupe/3.jpg", "../Cars/BMW/BMW M8 Gran Coupe/4.jpg", "../Cars/BMW/BMW M8 Gran Coupe/5.jpg", "../Cars/BMW/BMW M8 Gran Coupe/6.jpg", "../Cars/BMW/BMW M8 Gran Coupe/7.jpg", "../Cars/BMW/BMW M8 Gran Coupe/8.jpg", "../Cars/BMW/BMW M8 Gran Coupe/9.jpg", "../Cars/BMW/BMW M8 Gran Coupe/10.jpg"],
+        ["../Cars/BMW/X6/2024-bmw-x6-110-1675791921.jpg", "../Cars/BMW/X6/2024-bmw-x6-113-1675791922.jpg", "../Cars/BMW/X6/P90495591_highRes_the-new-bmw-x6-m-com.jpg"],
+        ["../Cars/BMW/X7/2023-bmw-x7-xdrive-40i144-641c5b4169eb2.jpg", "../Cars/BMW/X7/2023-bmw-x7-xdrive-40i147-641c5b438a1cc.jpg", "../Cars/BMW/X7/2023-bmw-x7-xdrive-40i128-641c5b39edaad.jpg", "../Cars/BMW/X7/2023-bmw-x7-xdrive-40i132-641c5b3c33cbc.jpg", "../Cars/BMW/X7/2023-bmw-x7-xdrive-40i101-641c5b2d70bc9.jpg", "../Cars/BMW/X7/2023-bmw-x7-xdrive-40i115-641c5b31db5bb.jpg"],
+        ["../Cars/Mercedes/CLA/1.jpg", "../Cars/Mercedes/CLA/2.webp", "../Cars/Mercedes/CLA/3.jpg", "../Cars/Mercedes/CLA/4.jpg"],
+        ["../Cars/Mercedes/A_Class/3.jpg", "../Cars/Mercedes/A_Class/4.jpg", "../Cars/Mercedes/A_Class/5.jpg", "../Cars/Mercedes/A_Class/6.jpg", "../Cars/Mercedes/A_Class/1.jpg", "../Cars/Mercedes/A_Class/2.jpg", "../Cars/Mercedes/A_Class/7.jpg", "../Cars/Mercedes/A_Class/8.jpg"],
+        ["../Cars/Mercedes/B_Class/640px-Mercedes-Benz_B-Class.jpg", "../Cars/Mercedes/B_Class/2.jpg", "../Cars/Mercedes/B_Class/Mercedes-Benz_B-Class_at_the_Frankfurt_Motor_Show_IAA_2011_(6147726918).jpg"],
+        ["../Cars/Mercedes/C_Class/1.jpg", "../Cars/Mercedes/C_Class/2.jpg", "../Cars/Mercedes/C_Class/3.jpg", "../Cars/Mercedes/C_Class/4.jpg", "../Cars/Mercedes/C_Class/5.jpg", "../Cars/Mercedes/C_Class/6.jpg", "../Cars/Mercedes/C_Class/7.jpg", "../Cars/Mercedes/C_Class/8.jpg"],
+        ["../Cars/Mercedes/E_Class/4.jpg", "../Cars/Mercedes/E_Class/5.jpg", "../Cars/Mercedes/E_Class/6.jpg", "../Cars/Mercedes/E_Class/7.jpg", "../Cars/Mercedes/E_Class/1.jpg", "../Cars/Mercedes/E_Class/2.jpg", "../Cars/Mercedes/E_Class/3.jpg", "../Cars/Mercedes/E_Class/8.jpg", "../Cars/Mercedes/E_Class/9.jpg"],
+        ["../Cars/Mercedes/S_Class/2022-mercedes-benz-s500-4matic-101-1642184014.jpg", "../Cars/Mercedes/S_Class/2022-mercedes-benz-s500-4matic-102-1642184016.jpg", "../Cars/Mercedes/S_Class/2022-mercedes-benz-s500-4matic-103-1642184013.jpg", "../Cars/Mercedes/S_Class/2022-mercedes-benz-s500-4matic-114-1642184019.jpg", "../Cars/Mercedes/S_Class/2022-mercedes-benz-s500-4matic-124-1642184029.jpg"],
+        ["../Cars/Alfa/Tonale/2024-alfa-romeo-tonale-eawd-103-6525bc16c793d.jpg", "../Cars/Alfa/Tonale/2024-alfa-romeo-tonale-eawd-237-6525bc17be9bb.jpg","../Cars/Alfa/Tonale/2024-alfa-romeo-tonale-eawd-316-6525bd7902872.jpg","../Cars/Alfa/Tonale/2024-alfa-romeo-tonale-eawd-496-6525bc1f91c71.jpg","../Cars/Alfa/Tonale/2024-alfa-romeo-tonale-eawd-511-6525bc219f129.jpg","../Cars/Alfa/Tonale/2024-alfa-romeo-tonale-eawd-569-6525bc29c2a98.jpg"],
+        ["../Cars/Alfa/Giulia/2023-alfa-romeo-giulia-101-6400fe6ad4891.jpeg","../Cars/Alfa/Giulia/2023-alfa-romeo-giulia-102-6400fe6b0bb68.jpeg","../Cars/Alfa/Giulia/2023-alfa-romeo-giulia-103-6400fe6b10c39.jpeg","../Cars/Alfa/Giulia/2023-alfa-romeo-giulia-107-6400fe6bccb6a.jpeg","../Cars/Alfa/Giulia/2023-alfa-romeo-giulia-110-6400fe6ae4216.jpeg"],
+        ["../Cars/Alfa/Stelvio/2024-alfa-romeo-stelvio-105-640215298fa2f.jpeg","../Cars/Alfa/Stelvio/2024-alfa-romeo-stelvio-106-640215298b274.jpeg","../Cars/Alfa/Stelvio/2024-alfa-romeo-stelvio-107-64021529f3b4c.jpeg","../Cars/Alfa/Stelvio/2024-alfa-romeo-stelvio-114-6402152ad8885.jpeg","../Cars/Alfa/Stelvio/2024-alfa-romeo-stelvio-115-6402152ada34e.jpeg"]
     ];
+
     if (document.getElementById("BMW")) {
         for (let i = 0; i < imageSets.length; i++) {
-            const images = imageSets[i];
-            const imageViewer = document.getElementById(`image-viewer-${i + 1}`);
-            const backwardButton = imageViewer.querySelector(".backward-btn");
-            const forwardButton = imageViewer.querySelector(".forward-btn");
-            const imageElement = imageViewer.querySelector(".current-image");
-
-            let currentIndex = 0;
-
-            function showImage(i) {
-                currentIndex = (i % images.length + images.length) % images.length;
-                imageElement.src = images[currentIndex];
-                imageElement.src = images[currentIndex];
-            }
-
-            backwardButton.addEventListener("click", function () {
-                currentIndex--;
-                showImage(currentIndex);
-            });
-
-            forwardButton.addEventListener("click", function () {
-                currentIndex++;
-                showImage(currentIndex);
-            });
-
-            // Show the initial image
-            showImage(currentIndex);
+            initializeViewer(i, imageSets[i]);
         }
     } else {
         for (let i = 6; i < imageSets.length; i++) {
-            const images = imageSets[i];
-            const imageViewer = document.getElementById(`image-viewer-${i + 1}`);
-            const backwardButton = imageViewer.querySelector(".backward-btn");
-            const forwardButton = imageViewer.querySelector(".forward-btn");
-            const imageElement = imageViewer.querySelector(".current-image");
+            initializeViewer(i, imageSets[i]);
+        }
+    }
 
-            let currentIndex = 0;
+    function initializeViewer(index, images) {
+        const imageViewer = document.getElementById(`image-viewer-${index + 1}`);
+        if (!imageViewer) return;
 
-            function showImage(i) {
-                currentIndex = (i % images.length + images.length) % images.length;
-                imageElement.src = images[currentIndex];
-                imageElement.src = images[currentIndex];
-            }
+        const backwardButton = imageViewer.querySelector(".backward-btn");
+        const forwardButton = imageViewer.querySelector(".forward-btn");
+        const imageElement = imageViewer.querySelector(".current-image");
 
-            backwardButton.addEventListener("click", function () {
-                currentIndex--;
-                showImage(currentIndex);
-            });
+        let currentIndex = 0;
 
-            forwardButton.addEventListener("click", function () {
-                currentIndex++;
-                showImage(currentIndex);
-            });
-
-            // Show the initial image
-            showImage(currentIndex);
+        function showImage(i) {
+            currentIndex = (i % images.length + images.length) % images.length;
+            imageElement.src = images[currentIndex];
         }
 
+        backwardButton.addEventListener("click", function () {
+            showImage(--currentIndex);
+        });
 
+        forwardButton.addEventListener("click", function () {
+            showImage(++currentIndex);
+        });
+
+        // Show the initial image
+        showImage(currentIndex);
     }
 });
+
 //-------------------------------------------------------Mahmoud part start here-----------------------------------------------------------------------------------------//
 function searchCars() {
 
