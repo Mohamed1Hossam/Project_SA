@@ -83,6 +83,15 @@ document.addEventListener("DOMContentLoaded", function () {
         ["../Cars/Chevy/Camaro/chevycamaro.jpg","../Cars/Chevy/Camaro/pexels-04iraq-1272398525-29098284.jpg"],
         ["../Cars/Chevy/Cativa/Chevycapvita.jpg","../Cars/Chevy/Cativa/images.jpeg"],
         ["../Cars/Chevy/Cruze/Chevycruze.jpg","../Cars/Chevy/Cruze/download.jpeg"],
+        ["../Cars/Lamborgini/Hurcan/LamborginiHurcan.jpg","../Cars/Lamborgini/Hurcan/michael-lock-NfbUoOFUuco-unsplash.jpg","../Cars/Lamborgini/Hurcan/viktor-theo-jh8T0oqzcZo-unsplash.jpg"],
+        ["../Cars/Lamborgini/Urus/Lamborghini_Urus_19.09.20_JM_(2)_(cropped).jpg","../Cars/Lamborgini/Urus/LamborginiUrus.jpg","../Cars/Lamborgini/Urus/pexels-katetrysh-27504024.jpg"],
+        ["../Cars/Lamborgini/Aventador/adrian-newell-6TcjU3i8d8s-unsplash.jpg","../Cars/Lamborgini/Aventador/LamborginiAventador.jpg","../Cars/Lamborgini/Aventador/marc-kleen-8hU6vtwY8l8-unsplash.jpg"],
+        ["../Cars/Toyota/Cruizer/depositphotos_514058360-stock-photo-russia-izhevsk-september-2021-toyota.jpg","../Cars/Toyota/Cruizer/depositphotos_633682612-stock-photo-pasay-apr-toyota-land-cruiser.jpg"],
+        ["../Cars/Toyota/RAV4/depositphotos_437525596-stock-photo-ufa-russia-15-november-2020.jpg","../Cars/Toyota/RAV4/depositphotos_250845458-stock-photo-toyota-rxv4-2019-interior.jpg","../Cars/Toyota/RAV4/depositphotos_614682802-stock-photo-toyota-rav4-hybrid-car-showcased.jpg"],
+        ["../Cars/Toyota/Corolla/istockphoto-1412133515-612x612.jpg","../Cars/Toyota/Corolla/istockphoto-1442768053-612x612.jpg","../Cars/Toyota/Corolla/istockphoto-1490891378-612x612.jpg"],
+        ["../Cars/Volvo/XC40/gettyimages-1175886362-612x612.jpg","../Cars/Volvo/XC40/gettyimages-1199188964-612x612.jpg","../Cars/Volvo/XC40/gettyimages-1199189059-612x612.jpg"],
+        ["../Cars/Volvo/XC60/gettyimages-1199188661-612x612.jpg","../Cars/Volvo/XC60/gettyimages-1327543751-612x612.jpg","../Cars/Volvo/XC60/gettyimages-649701514-612x612.jpg"],
+        ["../Cars/Volvo/XC90/istockphoto-1318131076-612x612.jpg","../Cars/Volvo/XC90/istockphoto-1499274436-612x612.jpg","../Cars/Volvo/XC90/istockphoto-1891879143-612x612.jpg"],
         
     ];
 
