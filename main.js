@@ -83,6 +83,15 @@ document.addEventListener("DOMContentLoaded", function () {
         ["../Cars/Chevy/Camaro/chevycamaro.jpg","../Cars/Chevy/Camaro/pexels-04iraq-1272398525-29098284.jpg"],
         ["../Cars/Chevy/Cativa/Chevycapvita.jpg","../Cars/Chevy/Cativa/images.jpeg"],
         ["../Cars/Chevy/Cruze/Chevycruze.jpg","../Cars/Chevy/Cruze/download.jpeg"],
+        ["../Cars/Lamborgini/Hurcan/LamborginiHurcan.jpg","../Cars/Lamborgini/Hurcan/michael-lock-NfbUoOFUuco-unsplash.jpg","../Cars/Lamborgini/Hurcan/viktor-theo-jh8T0oqzcZo-unsplash.jpg"],
+        ["../Cars/Lamborgini/Urus/Lamborghini_Urus_19.09.20_JM_(2)_(cropped).jpg","../Cars/Lamborgini/Urus/LamborginiUrus.jpg","../Cars/Lamborgini/Urus/pexels-katetrysh-27504024.jpg"],
+        ["../Cars/Lamborgini/Aventador/adrian-newell-6TcjU3i8d8s-unsplash.jpg","../Cars/Lamborgini/Aventador/LamborginiAventador.jpg","../Cars/Lamborgini/Aventador/marc-kleen-8hU6vtwY8l8-unsplash.jpg"],
+        ["../Cars/Toyota/Cruizer/depositphotos_514058360-stock-photo-russia-izhevsk-september-2021-toyota.jpg","../Cars/Toyota/Cruizer/depositphotos_633682612-stock-photo-pasay-apr-toyota-land-cruiser.jpg"],
+        ["../Cars/Toyota/RAV4/depositphotos_437525596-stock-photo-ufa-russia-15-november-2020.jpg","../Cars/Toyota/RAV4/depositphotos_250845458-stock-photo-toyota-rxv4-2019-interior.jpg","../Cars/Toyota/RAV4/depositphotos_614682802-stock-photo-toyota-rav4-hybrid-car-showcased.jpg"],
+        ["../Cars/Toyota/Corolla/istockphoto-1412133515-612x612.jpg","../Cars/Toyota/Corolla/istockphoto-1442768053-612x612.jpg","../Cars/Toyota/Corolla/istockphoto-1490891378-612x612.jpg"],
+        ["../Cars/Volvo/XC40/gettyimages-1175886362-612x612.jpg","../Cars/Volvo/XC40/gettyimages-1199188964-612x612.jpg","../Cars/Volvo/XC40/gettyimages-1199189059-612x612.jpg"],
+        ["../Cars/Volvo/XC60/gettyimages-1199188661-612x612.jpg","../Cars/Volvo/XC60/gettyimages-1327543751-612x612.jpg","../Cars/Volvo/XC60/gettyimages-649701514-612x612.jpg"],
+        ["../Cars/Volvo/XC90/istockphoto-1318131076-612x612.jpg","../Cars/Volvo/XC90/istockphoto-1499274436-612x612.jpg","../Cars/Volvo/XC90/istockphoto-1891879143-612x612.jpg"],
         
     ];
 
@@ -124,67 +133,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-//-------------------------------------------------------Mahmoud part start here-----------------------------------------------------------------------------------------//
-function searchCars() {
-
-    var input, filter, carSections, i, h2, txtValue;
-    input = document.getElementById("searchInput");
-    filter = input.value.toUpperCase();
-    var carSections = document.querySelectorAll(".individual-car");
-    for (i = 0; i < carSections.length; i++) {
-        h2 = carSections[i].querySelector("h2");
-        txtValue = h2.textContent || h2.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            carSections[i].style.display = "";
-        } else {
-            carSections[i].style.display = "none";
-        }
-    }
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-    var buyButtons = document.querySelectorAll('.buy-button');
-    buyButtons.forEach(function (button) {
-        button.addEventListener('click', function () {
-            alert('Bought Successfully!');
-        });
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const spans = document.querySelectorAll('td');
-
-    spans.forEach(span => {
-        span.addEventListener('mouseover', function () {
-            this.style.color = '#007bff';
-        });
-
-        span.addEventListener('mouseout', function () {
-            this.style.color = '';
-        });
-    });
-});
-
-
-function f() {
-    console.log("Submit button clicked!");
-
-    const Name = document.getElementById("name").value;
-    const E_mail = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
-
-
-    localStorage.setItem("Name", Name);
-    localStorage.setItem("E_mail", E_mail);
-    localStorage.setItem("message", message);
-
-
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("message").value = "";
-
-
-    alert("Submitted successfully!");
-}
-
-//------------------------------------------------------------------------------------------------------------------------------------------------//
