@@ -1,5 +1,6 @@
-function searchBrand() {
 //-------------------------------------------------------Mohamed hossam part start here-----------------------------------------------------------------------------------------//
+/*-------------------------------------------------------Search--------------------------------------------------------*/
+function searchBrand() {
     var keyword = document.getElementById("searchInput").value.toLowerCase();
 
     var Brands = {
@@ -33,9 +34,9 @@ function searchBrand() {
     } else {
         alert("Check spelling or else this brand doesn't exist on website....");
     }
-
 }
-
+/*-------------------------------------------------------Search--------------------------------------------------------*/
+/*-------------------------------------------------------Message--------------------------------------------------------*/
 let addToCartButtons = document.querySelectorAll(".add-to-cart");
 
 addToCartButtons.forEach(function (button) {
@@ -48,7 +49,8 @@ addToCartButtons.forEach(function (button) {
 function addToCart(carName) {
     alert("" + carName);
 }
-
+/*-------------------------------------------------------Message--------------------------------------------------------*/
+/*-------------------------------------------------------Photos Of Cars--------------------------------------------------------*/
 document.addEventListener("DOMContentLoaded", function () {
     const imageSets = [
         ["../Cars/BMW/3/1.png", "../Cars/BMW/3/2.png", "../Cars/BMW/3/3.png", "../Cars/BMW/3/4.jpg"],
@@ -133,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
         showImage(currentIndex);
     }
 });
-
+/*-------------------------------------------------------Photos Of Cars--------------------------------------------------------*/
 /*---------------------------------------Feedback-----------------------------------------------------------*/
 function openFeedbackBox() {
     document.getElementById('feedbackBox').style.display = 'block';
