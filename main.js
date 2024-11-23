@@ -46,8 +46,9 @@ addToCartButtons.forEach(function (button) {
 });
 
 function addToCart(carName) {
-    alert("You Bought " + carName);
+    alert("" + carName);
 }
+
 document.addEventListener("DOMContentLoaded", function () {
     const imageSets = [
         ["../Cars/BMW/3/1.png", "../Cars/BMW/3/2.png", "../Cars/BMW/3/3.png", "../Cars/BMW/3/4.jpg"],
@@ -133,3 +134,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+/*---------------------------------------Feedback-----------------------------------------------------------*/
+function openFeedbackBox() {
+    document.getElementById('feedbackBox').style.display = 'block';
+}
+
+function closeFeedbackBox() {
+    document.getElementById('feedbackBox').style.display = 'none';
+}
+
+function submitFeedback() {
+    const feedbackText = document.getElementById('feedbackText').value;
+    if (feedbackText.trim() === "") {
+        alert("Please enter your feedback before submitting.");
+    } else {
+        alert("Thank you for your feedback!");
+        closeFeedbackBox();
+    }
+}
+/*---------------------------------------Feedback-----------------------------------------------------------*/
