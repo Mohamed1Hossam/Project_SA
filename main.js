@@ -155,6 +155,7 @@ function submitFeedback() {
     }
 }
 /*---------------------------------------Feedback-----------------------------------------------------------*/
+
 /*------------------------------------------Login-----------------------------------------------------*/
 document.getElementById("signup-form").addEventListener("submit", function(event) {
     event.preventDefault();
