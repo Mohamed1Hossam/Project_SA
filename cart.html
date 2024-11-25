@@ -12,58 +12,59 @@
   <link rel="icon" href="main_Photos/LOGO-ICON.ico">
 </head>
 
-<body >
+<body>
   <nav>
-    <a href="index.html"><img src="./main_Photos/LOGO.png"></a>
+    <a href="index.html">
+      <img src="./main_Photos/LOGO.png">
+    </a>
     <div class="search">
       <button class="material-symbols-outlined" onclick="searchBrand()">search</button>
-      <input type="search" class="search-input" onchange="searchBrand()" id="searchInput" placeholder="search..."
-        autocomplete="off">
+      <input type="search" class="search-input" onchange="searchBrand()" id="searchInput" placeholder="search..." autocomplete="off">
     </div>
     <a href="index.html"><i class="bx bxs-home"></i>Home</a>
     <a href="Account/Profile.html" onclick="return CheckLogin()"><i class='bx bxs-user'></i>Profile</a>
     <a href="index.html#service"><i class="bx bxs-cog"></i>Services</a>
-    <a href="About Us Page/aboutus.html"><i class=" bx bxs-info-circle"></i>About</a>
-    <a href="Shop.html"><button class="addbutton"><i class="bx bx-cart-add"></i>Shop</button></a>
+    <a href="About Us Page/aboutus.html"><i class="bx bxs-info-circle"></i>About</a>
+    <a href="Shop.html">
+      <button class="addbutton"><i class="bx bx-cart-add"></i>Shop</button>
+    </a>
   </nav>
+
   <div class="cart-container">
-  <h1>Your Cart </h1>
-
-  <div id="cart2">
-
+    <h1>Your Cart</h1>
+    <div id="cart2"></div>
+    <button style="width: 200px; text-align: center; margin-bottom: 70px;" class="test">Payment details</button>
   </div>
 
+  <script>
+    var productlist = JSON.parse(localStorage.getItem("car"));
+    disp();
+    var z;
 
-  <button style="width: 200px;text-align: center; margin-bottom:70px ;" class="test">Payment details</button></div>
- <script>
-   var productlist=JSON.parse(localStorage.getItem("car"))
-   disp()
-   var z
-   function disp() {
-    
-    var carto ="";
-    for (let i = 0; i < productlist.length; i++) {
-       carto+=`<div style="color: #fff;" id="dnone"class="disele"><h1>${productlist[i].carName}</h1>
-        <h3>Car description</h3>
-        <p>${productlist[i].carName}has 375 horsepower and can accelerate from 0 to 60 MPH in only 4.4 seconds on its way to a top speed of 155 MPH. </p>
-        <button class=" add-to-cart" onclick= "del(${i})">Remove</button></div>`
-        
+    function disp() {
+      var carto = "";
+      for (let i = 0; i < productlist.length; i++) {
+        carto += `<div style="color: #fff;" id="dnone" class="disele">
+          <h1>${productlist[i].carName}</h1>
+          <h3>Car description</h3>
+          <p>${productlist[i].carName} has 375 horsepower and can accelerate from 0 to 60 MPH in only 4.4 seconds on its way to a top speed of 155 MPH.</p>
+          <button class="add-to-cart" onclick="del(${i})">Remove</button>
+        </div>`;
+      }
+      document.getElementById("cart2").innerHTML = carto;
     }
-    document.getElementById("cart2").innerHTML=carto
-   }
-   function del(x){
-   productlist.splice(x,1);
-   alert("This car will be removed from the cart")
-  
-   disp()
-   localStorage.setItem("car",JSON.stringify(productlist))
-   }
 
- 
- </script>
- 
+    function del(x) {
+      productlist.splice(x, 1);
+      alert("This car will be removed from the cart");
+      disp();
+      localStorage.setItem("car", JSON.stringify(productlist));
+    }
+  </script>
+
+  <footer style="background-color: #333; color: #fff; text-align: center; padding: 10px;">
+    &copy; 2024 Car Zone Team. All rights reserved.
+  </footer>
 </body>
+
 </html>
-
-
-

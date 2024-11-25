@@ -1,75 +1,51 @@
-var productlist=[]
+var productlist = [];
 
-
-function add(x){
-    productlist.push(x)
-  localStorage.setItem("car",JSON.stringify(productlist))
-  
-   disp(x)
-    
+function add(x) {
+    productlist.push(x);
+    localStorage.setItem("car", JSON.stringify(productlist));
+    disp(x);
 }
 
 function disp(y) {
-    productlist=JSON.parse(localStorage.getItem("car"))
-    var carto ="";
+    productlist = JSON.parse(localStorage.getItem("car"));
+    var carto = "";
     for (let i = 0; i < productlist.length; i++) {
-       carto+=`<h1>${y.carName}</h1>`
-        
+        carto += `<h1>${y.carName}</h1>`;
     }
-    document.getElementById("cart").innerHTML=carto
-   
-   
-
-    
-   
-   
+    document.getElementById("cart").innerHTML = carto;
 }
-
-
-
-
-
-  
-    
-    
-
-  
-  
- 
-
-
 
 const warehouse = [
     { carName: "Alfa Romeo Tonale", quantity: 2 },
-    { carName: "Alfa Romeo Giulia", quantity: 2 },//1
+    { carName: "Alfa Romeo Giulia", quantity: 2 }, // 1
     { carName: "Alfa Romeo Stelvio", quantity: 1 },
     { carName: "Audi A6", quantity: 0 },
-    { carName: "Audi Q3", quantity: 2 },//2
+    { carName: "Audi Q3", quantity: 2 }, // 2
     { carName: "Audi Q8", quantity: 4 },
     { carName: "BMW 3 Series", quantity: 1 },
-    { carName: "BMW 5 Series", quantity: 2 },//3
+    { carName: "BMW 5 Series", quantity: 2 }, // 3
     { carName: "BMW 7 Series", quantity: 2 },
     { carName: "BMW M8", quantity: 1 },
     { carName: "BMW X6", quantity: 1 },
     { carName: "BMW X7", quantity: 2 },
     { carName: "Ford Fusion", quantity: 1 },
-    { carName: "Ford Ecosport", quantity: 1 },//5
+    { carName: "Ford Ecosport", quantity: 1 }, // 5
     { carName: "Ford Mustang", quantity: 1 },
     { carName: "Mercedes CLA", quantity: 0 },
     { carName: "Mercedes A Class", quantity: 1 },
     { carName: "Mercedes B Class", quantity: 1 },
-    { carName: "Mercedes C Class", quantity: 1 },//6
+    { carName: "Mercedes C Class", quantity: 1 }, // 6
     { carName: "Mercedes E Class", quantity: 2 },
     { carName: "Mercedes S Class", quantity: 2 },
-    { carName: "Kia Cerato", quantity: 2 },//25
-    { carName: "Kia Sportage", quantity: 0 },//26
-    { carName: "Kia Picanto", quantity: 2 },//27
-    { carName: "Nissan Pathfinder", quantity: 1 },//28
-    { carName: "Nissan Titan", quantity: 2 },//29
-    { carName: "Nissan GTR", quantity: 2 },//30
-    { carName: "Dodge Charger", quantity: 1 },//25
-    { carName: "Dodge Durango", quantity: 2 },//26
-    { carName: "Dodge Challenger", quantity: 2 },//27
+    { carName: "Kia Cerato", quantity: 2 }, // 25
+    { carName: "Kia Sportage", quantity: 0 }, // 26
+    { carName: "Kia Picanto", quantity: 2 }, // 27
+    { carName: "Nissan Pathfinder", quantity: 1 }, // 28
+    { carName: "Nissan Titan", quantity: 2 }, // 29
+    { carName: "Nissan GTR", quantity: 2 }, // 30
+    { carName: "Dodge Charger", quantity: 1 }, // 25
+    { carName: "Dodge Durango", quantity: 2 }, // 26
+    { carName: "Dodge Challenger", quantity: 2 }, // 27
     { carName: "Chevorlet Camaro", quantity: 0 },
     { carName: "Chevorlet Captiva", quantity: 2 },
     { carName: "Chevorlet Cruze", quantity: 2 },
@@ -85,37 +61,29 @@ const warehouse = [
 ];
 
 function m(element) {
-    const i = parseInt(element.value);  
+    const i = parseInt(element.value);
     const resultContainer = document.getElementById("transaction-result");
-    const car = warehouse[i];  
+    const car = warehouse[i];
 
     if (!car) {
         alert("Invalid car selection.");
-        return;  
+        return;
     }
 
-    let cart = "";  
+    let cart = "";
     if (car.quantity > 0) {
-        car.quantity -= 1;  
+        car.quantity -= 1;
 
-      
-        cart = `<h1>${car.carName} has been purchased.<br> Remaining stock: ${car.quantity}</h1> <br> 
+        cart = `<h1>${car.carName} has been purchased.<br> Remaining stock: ${car.quantity}</h1> 
+        <br>
         <h3>If you want this car you should create an account</h3>
-        <a href="../cart.html"class="cart-btn">go to cart</a>`;
-        resultContainer.innerHTML = cart;  
-add(car)
-        
-       
-       
-        
-       
+        <a href="../cart.html" class="cart-btn">go to cart</a>`;
+        resultContainer.innerHTML = cart;
+        add(car);
     } else {
-        
         resultContainer.innerHTML = `<h1>Sorry, ${car.carName} is out of stock.</h1>`;
-       
     }
 
-    
     document.getElementById("car").innerHTML = cart;
 }
 
