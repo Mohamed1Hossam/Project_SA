@@ -739,10 +739,8 @@ textarea {
   flex-wrap: wrap;
  
 }
-body{
 
-}
-#cart2 h1{
+.cart-container h1{
   text-align: center;
   color: #fff;
   margin-bottom: 50px;
