@@ -27,7 +27,7 @@ background-position: center;">
     <a href="../Account/Profile.html" onclick="return CheckLogin()"><i class='bx bxs-user'></i>Profile</a>
     <a href="../index.html#service"><i class="bx bxs-cog"></i>Services</a>
     <a href="../About Us Page/aboutus.html"><i class=" bx bxs-info-circle"></i>About</a>
-    <a href="../Shop.html"><button class="addbutton"><i class="bx bx-cart-add"></i>Shop</button></a>
+    <a href="../cart.html"><button class="addbutton"><i class="bx bx-cart-add"></i>Cart</button></a>
   </nav>
 
   <h1 style="text-align: center; margin-top: 20px; color: #eee;" id="BMW"><br>Choose Your BMW Car</h1>
@@ -43,7 +43,7 @@ background-position: center;">
       <!-- <p>Speed: <span id="car1-speed">0</span> mph</p> -->
       <p>Price: 2,000,000 EGP</p>
       <!-- <p>Acceleration: <span id="car1-acceleration">0</span> m/s²</p> -->
-      <button class="add-to-cart" onclick="addToCart('{BMW 3 Series}')">Buy Now</button>
+      <button class=" add-to-cart"  onclick="m(this)" value="6" >Add To Cart</button>
       <a href="BMW 3 Series.html">
         <button class="details">Details</button>
       </a>
@@ -62,7 +62,7 @@ background-position: center;">
       <!-- <p>Speed: <span id="car2-speed">0</span> mph</p> -->
       <p>Price: 3,500,000 EGP</p>
       <!-- <p>Acceleration: <span id="car2-acceleration">0</span> m/s²</p> -->
-      <button class="add-to-cart" onclick="addToCart('{BMW 5 Series}')">Buy Now</button>
+      <button class=" add-to-cart"  onclick="m(this)" value="7" >Add To Cart</button>
       <a href="BMW 5 Series.html">
         <button class="details">Details</button>
       </a>
@@ -81,7 +81,7 @@ background-position: center;">
       <!-- <p>Speed: <span id="car2-speed">0</span> mph</p> -->
       <p>Price: 6,500,000 EGP</p>
       <!-- <p>Acceleration: <span id="car2-acceleration">0</span> m/s²</p> -->
-      <button class="add-to-cart" onclick="addToCart('{BMW 7 Series}')">Buy Now</button>
+      <button class=" add-to-cart"  onclick="m(this)" value="8" >Add To Cart</button>
       <a href="BMW 7 Series.html">
         <button class="details">Details</button>
       </a>
@@ -100,7 +100,7 @@ background-position: center;">
       <!-- <p>Speed: <span id="car2-speed">0</span> mph</p> -->
       <p>Price: 12,500,000 EGP</p>
       <!-- <p>Acceleration: <span id="car2-acceleration">0</span> m/s²</p> -->
-      <button class="add-to-cart" onclick="addToCart('{BMW M8}')">Buy Now</button>
+      <button class=" add-to-cart"  onclick="m(this)" value="9" >Add To Cart</button>
       <a href="BMW M8.html">
         <button class="details">Details</button>
       </a>
@@ -119,7 +119,7 @@ background-position: center;">
       <!-- <p>Speed: <span id="car2-speed">0</span> mph</p> -->
       <p>Price: 10,500,000 EGP</p>
       <!-- <p>Acceleration: <span id="car2-acceleration">0</span> m/s²</p> -->
-      <button class="add-to-cart" onclick="addToCart('{BMW X6}')">Buy Now</button>
+      <button class=" add-to-cart"  onclick="m(this)" value="10" >Add To Cart</button>
       <a href="BMW X6.html">
         <button class="details">Details</button>
       </a>
@@ -138,7 +138,7 @@ background-position: center;">
       <!-- <p>Speed: <span id="car2-speed">0</span> mph</p> -->
       <p>Price: 9,500,000 EGP</p>
       <!-- <p>Acceleration: <span id="car2-acceleration">0</span> m/s²</p> -->
-      <button class="add-to-cart" onclick="addToCart('{BMW X7}')">Buy Now</button>
+      <button class=" add-to-cart"  onclick="m(this)" value="11" >Add To Cart</button>
       <a href="BMW X7.html">
         <button class="details">Details</button>
       </a>
@@ -147,6 +147,7 @@ background-position: center;">
       </a>
     </div>
   </div>
+  <div  id="transaction-result"></div>
 
   <footer style="background-color: #333; color: #fff; text-align: center; padding: 10px;">
     &copy; 2024 Car Zone Team. All rights reserved.
