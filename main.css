@@ -940,7 +940,7 @@ td2:first-child {
 }
 /*-------------------------------------Profile---------------------------------------------------------------------------------------*/
 /*-------------------------------------cart------------------------------------------------------------------------------------------*/
-#transaction-result{
+#transaction-result {
 color: #d9e7ff;  
 background-color: rgba(0, 0, 0, 0.7);
 display: flex;
@@ -971,23 +971,28 @@ text-decoration: none;
 background-color: #caa607;
 }
 
-.cart-container h1{
+.cart-container h1 {
 text-align: center;
 color: #000000;
 margin-bottom: 50px;
 }
 
-.del{
+.del {
 display: none;
 }
 
 #cart2 {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Center products */
-  gap: 20px; /* Space between products */
-  margin: auto;
+  flex-wrap: wrap; /* Allow wrapping */
+  justify-content: flex-start; /* Align items to the left within the container */
+  gap: 20px; /* Space between items */
+  margin: 0 auto; /* Center the container horizontally */
+  width: calc(100% - 40px); /* Account for padding or potential overflow */
+  max-width: 1200px; /* Set a maximum width for the container */
+  padding: 0 20px; /* Add horizontal padding for spacing */
+  box-sizing: border-box; /* Ensure padding doesn’t affect width */
 }
+
 
 .disele {
   width: 100%;
@@ -1004,20 +1009,20 @@ display: none;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.disele p{
+.disele p {
   margin: 0 3px;
   text-transform: capitalize;
   text-align: left;
   color: black;
 }
 
-.disele h3{
+.disele h3 {
 margin: 0 3px;
 text-align: left;
 color: black;
 }
 
-.disele button{
+.disele button {
   margin-top: 15px;
   margin-bottom: 0;
   padding: 10px 15px;
